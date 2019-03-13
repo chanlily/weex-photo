@@ -12,7 +12,8 @@ wxphoto扩展WXModule组件，提供选择拍照或者选择照片并返回结�
 # 代码展示
 ## 1、选择拍照
 
-
+ ```
+ 
 private void openCamera () {
 
         Intent intentCamera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -34,10 +35,12 @@ private void openCamera () {
         mActivity.startActivityForResult(intentCamera, CAMERA_REQUEST_CODE);
         
     }
-    
+ ```
+ 
 ## 2、选择照片，打开手机图库
 
-
+ ```
+ 
 private void openPhoto () {
 
      Intent intentToPickPic = new Intent(Intent.ACTION_PICK, null);
@@ -49,5 +52,6 @@ private void openPhoto () {
      mActivity.startActivityForResult(intentToPickPic, GALLERY_REQUEST_CODE);
      
 }
+ ```
 
 
